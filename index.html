@@ -1,123 +1,261 @@
-<!-- <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<style>
-div.fixed {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 300px;
-  border: 3px solid #73AD21;
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OurVacation</title>
+    
+    <style>
+        table, th, tr {
+            margin-left: 280px;
+            text-align: center;
+            padding: 8px;
+            border-radius: 12px;
+            border-spacing: 4px;
+ 
+        }
+
+        th {
+            background-color: skyblue;
+            border-spacing: 8px;
+        }
+
+        td {
+            background-color: #D6EEEE;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        img {
+            margin: 5px;
+        }
+
+        tr:hover {
+            background-color: #D6EEEE;
+        }
+
+        .special {
+            background-color: beige;
+        }
+
+        div {
+            width: 0px;
+            height: 0px;
+            background: red;
+            position: relative;
+            animation: myfirst 6s 2;
+            animation-direction: alternate;
+
+        }
+
+        @keyframes myfirst {
+            0% { left: 30px; top: 20px;}
+            25% { left: 80px; top: 120px;}
+            /* 50% { left: 100px; top: 300px;} */
+            /* 75% { left: 0px; top: 200px;}
+            100% { left: 0px; top: 0px;} */
+
+        }
+
+        
+
+        details { margin:5px 0 10px; float:left;}
+details > summary { background:#444; color:#fff; padding:10px; outline:0; border-radius:5px; cursor:pointer; transition:background 0.5s; text-align:left; box-shadow: 1px 1px 2px gray; width: 10px;}
+details > summary::-webkit-details-marker { background:#444; color:#fff; background-size:contain; transform:rotate3d(0, 0, 1, 90deg); transition:transform 0.25s;}
+details[open] > summary::-webkit-details-marker { transform:rotate3d(0, 0, 1, 180deg);}
+details[open] > summary { background:#444;}
+details[open] > summary ~ * { animation:reveal 0.5s;}
+.tpt { background:#444; color:#fff; margin:5px 0 10px; padding:5px 10px; line-height:10px; border-radius:10px; box-shadow: 1px 1px 2px gray;}
+
+@keyframes reveal {
+    from { opacity:0; transform:translate3d(0, -30px, 0); }
+    to { opacity:1; transform:translate3d(0, 0, 0); }
 }
-<!-- </style>
+
+
+/* 
+        <a href="https://www.flaticon.com/free-icons/google-maps" title="google maps icons">Google maps icons created by Freepik - Flaticon</a>
+
+        <a href="https://www.flaticon.com/free-icons/review" title="review icons">Review icons created by Aldo Cervantes - Flaticon</a> */
+
+    </style>
 </head>
 <body>
 
-<h2>position: fixed;</h2>
 
-<p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled:</p>
+    <h2> 🌹🌻 2박 3일 여행 일정표 🌻🌹</h2>
 
-<div class="fixed">
-This div element has position: fixed;
-</div>
 
-</body>
-</html> --> -->
 
-<!DOCTYPE html>
-<html>
-    <title>music_thatILove</title>
-    <head>
-        <style>
-            .container {
-                position: relative;
-            }
+    <div><img src="car.png" style="height:40px"></div>
+    <img src="map.png" style="height:200px;">
+    <table style = "width: 70%">
+        <tbody>
+            <tr>
+                <th>DAY</th>
+                <!-- <th>3일(수)</th> -->
+                <th>5일(금)</th>
+                <th>6일(토)</th>
+                <th>7일(토)</th>
+            </tr>
 
-            img {
-                text-align: center;
-                height: auto;
-                opacity: 0.4;
-            }
+            <tr>
+                <th>장소</th>
+                <!-- <td>대구(이안센트럴)</td> -->
+                <td>청도</td>
+                <td>고성</td>
+                <td>집</td>
+            </tr> 
+    
+            <tr>
+                <th>08:00</th>
+                <!-- <td rowspan="6">&nbsp</td> -->
+                <td rowspan="2">&nbsp</td>
+                <td rowspan="2">
+                    고성출발<br>
+                    <a href="https://map.naver.com/v5/search/%EA%B3%A0%EC%84%B1/address/14300977.036800254,4633334.416784579,%EA%B0%95%EC%9B%90%EB%8F%84%20%EA%B3%A0%EC%84%B1%EA%B5%B0,adm?c=14234345.2861687,4636796.9796264,9,0,0,0,dh"><img src="google-maps.png" style="width:20px;height:auto;"></a>
 
-            .topleft {
-                position: absolute;
-                top: 8px;
-                left: 16px;
-                font-size: 18px;
-                font-family:Courier;
-            }
+                </td>
+                <td rowspan="116">&nbsp</td>
+            </tr>
+            <tr>
+                <th>09:00</th>
+                <!-- <td>&nbsp</td> -->
+            </tr>   
 
-            .keep {
-                width: 40%;
-                text-align: center;
-                margin: 100px;
-                margin-left: 200px;
-            }
-        </style>
+            <tr>
+                <th>10:00</th>
+                <td>전복구이</td>
+                <td rowspan="2">
+                    공룡박물관<br>
+                    <a href="https://map.naver.com/v5/search/%EA%B3%B5%EB%A3%A1%EB%B0%95%EB%AC%BC%EA%B4%80/place/12306431?c=14261712.0920492,4151400.6475488,13,0,0,0,dh&placePath=%3Fentry%253Dbmp"><img src="naver.jpg" style="width:20px;height:auto;"></a>
+                    <a href="https://blog.naver.com/diddyd85/222822216792"><img src="review.png" alt = "공룡박문관리뷰" style="width:20px;height:auto;"></a>
+                    <a>                   
+                        <details>
+                            <summary></summary>
+                            <p>어른: 3,000원 <br> 어린이: 1,500원</p>
+                        </details>
+                    </a>    
+                    
+                </td>
+                <!-- <td>&nbsp</td> -->
+            </tr>   
+
+            <tr>
+                <th>11:00</th>
+\                <td>청도출발<br>
+                    <a href="https://map.naver.com/v5/search/%EC%B2%AD%EB%8F%84%EB%AF%B8%EB%82%98%EB%A6%AC%EC%82%BC%EA%B2%B9%EC%82%B4/place/13351654?c=14315696.7685401,4252211.8562966,10,0,0,0,dh&placePath=%3Fentry%253Dbmp"><img src="naver.jpg" style="width:20px;height:auto;"></a>
+                    <a href="https://blog.naver.com/somuseum/222824421596"><img src="review.png" alt="미나리삼겹살리뷰" style="width:20px;height:auto;"></a>
+                </td>
+                <!-- <td>&nbsp</td> -->
+            </tr>   
+
+            <tr>
+                <th>12:00</th>
+                <td rowspan="3">와인터널
+                    <br>
+                    <a href="https://map.naver.com/v5/search/%EC%99%80%EC%9D%B8%ED%84%B0%EB%84%90/place/11854101?c=14328148.2543354,4261433.0993002,15,0,0,0,dh&placePath=%3Fentry%253Dbmp"><img src="naver.jpg" style="width:20px;height:auto;"></a>
+                    <a href="https://blog.naver.com/kwhyun1627/222811116691"><img src="review.png" alt="와인터널리뷰" style="width:20px;height:auto;"></a>
+                </td>
+                <td rowspan="2">통영짬뽕(점심)<br>
+                    <a href="https://map.naver.com/v5/entry/place/1635809541?c=14284093.5769860,4170528.9762793,11,0,0,0,dh"><img src="naver.jpg" style="width:20px;height:auto;"></a>
+                    <a href="https://blog.naver.com/ekal3659/222811277325"><img src="review.png" alt="짬뽕집리뷰" style="width:20px;height:auto;"></a>
+                </td>
+                <!-- <td>&nbsp</td> -->
+            </tr> 
+
+            <tr>
+                <th>13:00</th>
+                <!-- <td rowspan="2">
+                    와인터널<br>
+                    <a href="https://map.naver.com/v5/search/%EC%99%80%EC%9D%B8%ED%84%B0%EB%84%90/place/11854101?c=14328148.2543354,4261433.0993002,15,0,0,0,dh&placePath=%3Fentry%253Dbmp"><img src="naver.jpg" style="width:20px;height:auto;"></a>
+                    <a href="https://blog.naver.com/kwhyun1627/222811116691"><img src="review.png" alt="와인터널리뷰" style="width:20px;height:auto;"></a>
+                </td> -->
+                <!-- <td>&nbsp</td> -->
+            </tr>   
+
+            <tr>
+                <th>14:00</th>
+                <!-- <td>대구 도착</td> -->
+                <td rowspan="2">고성 상족암 투어<br>
+                    <a href="https://map.naver.com/v5/entry/place/11622368?c=14265610.5340126,4151490.7953327,15,0,0,0,dh"><img src="naver.jpg" style="width:20px;height:auto;"></a>
+                    <a href="https://blog.naver.com/shj100518/222780622452"><img src="review.png" alt="상족암공원리뷰" style="width:20px;height:auto;"></a>
+                </td>
+                <!-- <td>&nbsp</td> -->
+            </tr>   
+
+            <tr>
+                <th>15:00</th>
+                <!-- <td>교동면옥(점심)</td> -->
+                <td rowspan = "2">레일바이크<br>
+                    <a href="https://map.naver.com/v5/search/%EC%B2%AD%EB%8F%84%20%EB%A0%88%EC%9D%BC%EB%B0%94%EC%9D%B4%ED%81%AC/place/38258910?c=14326875.6833125,4252211.8562966,12,0,0,0,dh&placePath=%3Fentry%253Dbmp"><img src="naver.jpg" style="width:20px;height:auto;"></a>
+                    <a href="https://blog.naver.com/minimicodi/222726643232"><img src="review.png" alt="레일바이크리뷰" style="width:20px;height:auto;"></a>
+                </td>
+                <!-- <td>&nbsp</td> -->
+            </tr>   
+
+            <tr>
+                <th>16:00</th>
+                <!-- <td>중앙로 떡볶이</td> -->
+                <td rowspan="2">고성 만화 방초(수국축제)</td>
+                <!-- <td>&nbsp</td> -->
+            </tr>   
+
+            <tr>
+                <th>17:00</th>
+                <!-- <td>2.28공원, 계산 성당</td> -->
+                <td rowspan="2">카페 덕남</td>
+                <!-- <td>&nbsp</td> -->
+            </tr>   
+
+            <tr>
+                <th>18:00</th>
+                <!-- <td rowspan="3">서문야시장</td> -->
+                <td rowspan="2">본토대가(저녁)</td>
+                <!-- <td>&nbsp</td> -->
+            </tr>   
+
+            <tr>
+                <th>19:00</th>
+                <td rowspan="2">한재마실</td>
+                <!-- <td>&nbsp</td> -->
+            </tr>   
+
+            <tr>
+                <th>20:00</th>
+                <td rowspan="5">&nbsp</td>
+                <!-- <td>&nbsp</td> -->
+            </tr>   
+
+            <tr>
+                <th>21:00</th>
+                <!-- <td>두류공원</td> -->
+                <td rowspan="4">&nbsp</td>
+                <!-- <td>&nbsp</td> -->
+            </tr>   
+
+            <tr>
+                <th>22:00</th>
+                <td rowspan="4">&nbsp</td>
+                <!-- <td>&nbsp</td> -->
+            </tr>   
+
+            <tr>
+                <th>23:00</th>
+                <!-- <td>&nbsp</td> -->
+            </tr>   
+
+            <tr>
+                <th>24:00</th>
+                <!-- <td>&nbsp</td> -->
+            </tr>   
+
+  
+        </tbody>
         
-            <div class="topleft keep">
-                <h1>j's lullaby</h1>
-                <h2>darlin' I'd wait for you</h2>
-                <p>
-                    Darlin', I'd wait for you
-                    Even if you didn't ask me to
-                    
-                    Tie a lasso around the moon
-                    And bring it on down to you
-                    
-                    I'd bottle the feeling you give me
-                    And shelve that stuff for years to come
-                    
-                    'Cause, baby, when your arms are around me
-                    
-                    I'd swear that I'm holding the sun
-                    
-                    I'd give you the sun if you asked me
-                    
-                    You could have all of the time
-                    You could have the stars and the trees
-                    When dividing up the universe
-                    You could have mine
-                    You could have mine
-                    
-                    Darlin', I wish that you
-                    
-                    Could give me some more time
-                    
-                    To herd the whole sky in my arms
-                    
-                    And release it when you're mine
-                    
-                    I'd tell you, "I thought I loved you too"
-                    
-                    I just didn't have the words to say
-                    I'd put the beach in your backyard
-                    
-                    In hopes to be enough for you to stay
-                    I'd give you the sun if you asked me
-                    
-                    You could have all of the time
-                    You could have the stars and the trees
-                    When dividing up the universe
-                    You could have mine
-                    
-                    You could have mine
-                    I'd give you the sun
-                    I'd give you the sun
-                    I'd give you the sun if you asked me (I'd give you the sun)
-                    
-                    You could have all of the time
-                    
-                    You could have the stars and the trees (I'd give you the sun)
-                    
-                    When dividing up the universe
-                    You could have mine
-                    You could have mine
-                    You could have mine</p>
-                </div>
-                <div class="container keep">
-                    <img src="lullaby.jpg">
-                </div>
-            
-    </head>
+    </table>
+</body>
 </html>
