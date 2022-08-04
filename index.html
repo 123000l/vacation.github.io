@@ -47,14 +47,14 @@
             height: 0px;
             background: red;
             position: relative;
-            animation: myfirst 6s 2;
+            animation: myfirst 7s 2;
             animation-direction: alternate;
 
         }
 
         @keyframes myfirst {
-            0% { left: 30px; top: 20px;}
-            25% { left: 80px; top: 120px;}
+            0% { left: 20px; top: 20px;}
+            25% { left: 50px; top: 50px;}
             /* 50% { left: 100px; top: 300px;} */
             /* 75% { left: 0px; top: 200px;}
             100% { left: 0px; top: 0px;} */
@@ -72,7 +72,7 @@ details[open] > summary ~ * { animation:reveal 0.5s;}
 .tpt { background:#444; color:#fff; margin:5px 0 10px; padding:5px 10px; line-height:10px; border-radius:10px; box-shadow: 1px 1px 2px gray;}
 
 @keyframes reveal {
-    from { opacity:0; transform:translate3d(0, -30px, 0); }
+    from { opacity:0; transform:translate3d(0, 0px, 0); }
     to { opacity:1; transform:translate3d(0, 0, 0); }
 }
 
@@ -91,8 +91,9 @@ details[open] > summary ~ * { animation:reveal 0.5s;}
 
 
 
-    <div><img src="toy-train.png" style="height:40px"></div>
-    <img src="map.png" style="height:200px;">
+    <div><img src="toy-train.png" style="height:30px"></div>
+    <img src="map.png" style="height:100px;">
+    <p><img src="naver.jpg" style="height:20px;">네이버 지도<br><img src="review.png" style="height:20px;">리뷰</p>
     <table style = "width: 100%">
         <tbody>
             <tr>
